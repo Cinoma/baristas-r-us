@@ -18,7 +18,7 @@ const Navbar = ({ totalItems }) => {
                     <div classname={classes.grow} />
                     <div className={classes.button}>
                         <IconButton aria-label='Show cart items' color='inherit'>
-                            <Badge badgeContent={totalItems} color='primary'>
+                            <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
