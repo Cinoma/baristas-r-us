@@ -3,9 +3,9 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '
 import { ShoppingCart } from '@mui/icons-material';
 
 import logo from '../../assets/commerce.png';
-import  useStyles from './styles';
+import useStyles from './styles';
 
-const Navbar = () => {
+const Navbar = ({ totalItems }) => {
     const classes = useStyles();
     return (
         <>
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <div classname={classes.grow} />
                     <div className={classes.button}>
                         <IconButton aria-label='Show cart items' color='inherit'>
-                            <Badge badgeContent={2} color='secondary'>
+                            <Badge badgeContent={totalItems} color='primary'>
                                 <ShoppingCart />
                             </Badge>
                         </IconButton>
