@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { ImputLabel, Select, MenuItem, Button, Grid, Typography, InputLabel } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { InputLabel, Select, MenuItem, Button, Grid, Typography} from '@mui/material';
 import { useForm, FormProvider } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { commerce } from '../../lib/commerce';
@@ -17,7 +17,7 @@ const AddressForm = ({ checkoutToken, next }) => {
 
     const countries = Object.entries(shippingCountries).map(([code, name]) => ({ id: code, label: name }));
     const subdivisions = Object.entries(shippingSubdivisions).map(([code, name]) => ({ id: code, label: name }));
-    const options = shippingOptions.map((sO) => ({ id: sO.id, label: `${sO.description} =  (${sO.price.formatted_with_symbol})` }))
+    const options = shippingOptions.map((sO) => ({ id: sO.id, label: `${sO.description} - (${sO.price.formatted_with_symbol})` }));
 
     const fetchShippingCountries = async (checkoutTokenId) => {
         const { countries } = await commerce.services.localeListShippingCountries(checkoutTokenId);

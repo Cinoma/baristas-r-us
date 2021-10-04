@@ -19,7 +19,7 @@ const Navbar = ({ totalItems }) => {
                         <img src={logo} alt='Commerce.js' height='25px' className={classes.image} />
                         Baristas-R-Us
                     </Typography>
-                    <div classname={classes.grow} />
+                    <div className={classes.grow} />
                     {location.pathname === '/' && (
                     <div className={classes.button}>
                         <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit'>
