@@ -1,11 +1,11 @@
-import React from 'react';
-import { Grid } from '@mui/material';
+import React from "react";
+import { Grid } from "@mui/material";
 
-import Product from './Product/Product';
-import useStyles from './styles'
+import Product from "./Product/Product";
+import useStyles from "./styles";
 
 // Manual dummy items aranged in a list
-// 
+//
 // const products = [
 //     { id: 1, name: 'Kettle', description: 'Electric Kettle', price: '$149', image: 'https://cdn.shopify.com/s/files/1/0057/6235/1219/products/Fellow__0000s_0006_Stagg-EKG-hero-shotOptimized_600x.png?v=1630682423'},
 //     { id: 2, name: 'Coffee Maker', description: 'Pour-over coffee maker', price: '$115', image: 'https://store.chemexcoffeemaker.com/media/catalog/product/c/h/chemex-classic-6cup-detail_1.png'},
@@ -22,7 +22,7 @@ const Products = ({ products, onAddToCart }) => {
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
           <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
-            <Product product={product} onAddToCart={onAddToCart}/>
+            <Product product={product} onAddToCart={onAddToCart} />
           </Grid>
         ))}
       </Grid>
