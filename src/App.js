@@ -68,7 +68,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={window.location.pathname || ""}>
       <div>
         <Navbar totalItems={cart.total_items} />
         <Switch>
