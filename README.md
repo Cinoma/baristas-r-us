@@ -10,4 +10,7 @@ The inspiration came from my wife who works as a local barista at a fancy coffee
 ### Deployed through Github Pages via [This Tutorial](https://github.com/gitname/react-gh-pages)
 
 ## Known Bugs
+
 - [ ] Refreshing on any page other than home screen results in ❗404 error.
+- [ ] Resolve **`1`** potential vulnerability
+  - Remove unsupported `ansi-html` dependency
