@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/cinoma.github.io/baristas-r-us/static/js/main.5ec43766.chunk.js",
+    "main.js.map": "/cinoma.github.io/baristas-r-us/static/js/main.5ec43766.chunk.js.map",
+    "runtime-main.js": "/cinoma.github.io/baristas-r-us/static/js/runtime-main.c49faaa4.js",
+    "runtime-main.js.map": "/cinoma.github.io/baristas-r-us/static/js/runtime-main.c49faaa4.js.map",
+    "static/js/2.2003b2e4.chunk.js": "/cinoma.github.io/baristas-r-us/static/js/2.2003b2e4.chunk.js",
+    "static/js/2.2003b2e4.chunk.js.map": "/cinoma.github.io/baristas-r-us/static/js/2.2003b2e4.chunk.js.map",
+    "index.html": "/cinoma.github.io/baristas-r-us/index.html",
+    "static/js/2.2003b2e4.chunk.js.LICENSE.txt": "/cinoma.github.io/baristas-r-us/static/js/2.2003b2e4.chunk.js.LICENSE.txt",
+    "static/media/commerce.457bea4f.png": "/cinoma.github.io/baristas-r-us/static/media/commerce.457bea4f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c49faaa4.js",
+    "static/js/2.2003b2e4.chunk.js",
+    "static/js/main.5ec43766.chunk.js"
+  ]
+}
