@@ -27,19 +27,22 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
   const history = useHistory();
 
   useEffect(() => {
-    const generateToken = async () => {
-      try {
-        const token = await commerce.checkout.generateToken(cart.id, {
-          type: "cart",
-        });
+    if (cart.id) {
+      const generateToken = async () => {
+        try {
+          const token = await commerce.checkout.generateToken(cart.id, {
+            type: "cart",
+          });
 
-        setCheckoutToken(token);
-      } catch (error) {
-        history.pushState("/");
-      }
-    };
+          setCheckoutToken(token);
+        } catch (error) {
+          history.pushState("/");
+        }
+      };
 
-    generateToken();
+      generateToken();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cart]);
 
   const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
