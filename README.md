@@ -1,4 +1,6 @@
-# Welcome to My E-Commerce Demo App
+# Welcome to My E-Commerce App
+
+See Live Site [Here](https://cinoma.github.io/baristas-r-us/)
 
 ## Baristas - R - Us
 
